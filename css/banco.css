@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	background: #DEFADA;
+}
+h1{
+	color: white;
+	text-align: center;
+}
+
+.form-register{
+	width: 98%;
+	max-width: 500px;
+	margin: auto;
+	/*background: #3b4652;*/
+	border-radius: 7px;
+}
+

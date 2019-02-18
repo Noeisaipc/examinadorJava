@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CONFIGURACION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cotitular.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+      <a class="navbar-brand" href="#"><img src="img/upiic.png" class="float-right" width="100" height="100"/></a>
+    
+    <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+         <a class="nav-link" href="./inicio_profe">INICIO</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">EXAMENES</a>
+         </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">PERFIL</a>
+         </li>
+        <li class="nav-item">
+         <a class="nav-link" href="./index.html">CERRAR SESION</a>
+        </li>
+      </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <h2><em>SISTEMA DE EXAMEN EN LÍNEA</em></h2><br>
+  </div>
+
+  <form action="registrar.php" method="post" class="form-register">
+  <h5 class="form__titulo">CONFIGURACIÓN</h5><br>
+  <h5>Bienvenido<em>Rogelio Licona Molina</em></h5>
+
+  <div class="contenedor-inputs">
+
+    <label>Rol asignado:</label>
+    <input type="text" name="Rol" placeholder="Profesor" class="input-48" required><br><br>
+    <label>Rol cotitular:</label>
+    <input type="text" name="Rol" placeholder="NINGUNO" class="input-48" required><br><br>
+    <label>Invitar cotitular:</label>
+  <select class="form-control" id="sel1">
+    <option>Co-Editor</option>
+    <option>Co-Viewer</option>
+  </select><br><br><br>
+   <a href="C:\PANTALLAS\CU011.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>INVITAR</a><br><br>
+    <p class="form__link"><a href="#">AYUDA</a></p>
+    
+
+
+  </div>
+    
+  </form>
+
+</body>
+</html>

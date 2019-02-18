@@ -1,0 +1,58 @@
+/* Copyright 2017 Ricardo Armando Machorro Reyes.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+language governing permissions and limitations under the License.*//* 
+    Created on : 23/08/2017, 10:51:53 PM
+    Author     : Ricardo Armando Machorro Reyes.
+*/
+/* Color de la barra de menú */
+.menu-bar {background-color: #eee;}
+/* El elemento seleccionable es el ancla. */
+.menu-bar a {color: black}
+/* Color de fondo de las anclas del nivel más alto al pasarles el mouse encima. 
+ * Opcional*/
+.menu-bar > ul > li:hover > a {
+  background: cyan; 
+}
+/* li:hover es un menú con el mouse encima y por lo tanto está abierto. Aquí se tiene
+ * el color de fondo de la anclas dentro de un menú abierto. */
+.menu-bar li:hover a { 
+  background: #ccc; 
+}
+/* Color de la selección en un menú abierto de segundo nivel. */
+.menu-bar li:hover li a:hover { 
+  background: lightskyblue;
+}
+/* Nivel principal */
+.menu-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Menú */ 
+.menu-bar >ul> li {
+  display: inline-block;
+  position: relative; /* Posición base al abrir el menú. */
+}
+/* La lista de cada menú está oculta. */
+.menu-bar li ul {
+  display: none; 
+  position: absolute; /* La lista del menú se despliega encima del contenido. */
+}
+/* El enlace dentro de cada menuitem de la lista. */
+.menu-bar a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px;
+  margin-left: 1px;
+  white-space: nowrap; /* No sustituye espacios por saltos de línea. */
+}
+/* Al pasar el mouse encima de un menu, su lista se hace visible. */
+.menu-bar li:hover ul {
+  display: block;
+}

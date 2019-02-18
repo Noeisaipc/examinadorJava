@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>REGISTRO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/registro.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+    <a class="navbar-brand" href="#"><img src="img/upiic.png" class="float-right" width="100" height="100"/></a>
+  
+  <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+       <a class="nav-link" href="#">INICIO</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">PERFIL</a>
+       </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">CERRAR SESION</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <h2><em>SISTEMA DE EXAMEN EN LÍNEA</em></h2>
+  </div>
+
+  <form action="registrar.php" method="post" class="form-register">
+  <h4 class="form__titulo">Registro de usuarios</h4>
+
+  <div class="contenedor-inputs">
+    <input type="text" name="Nombre" placeholder="Mario" class="input-48" required>
+    <input type="text" name="AP" placeholder="Ponce Estevez " class="input-48" required><br><br>
+    <input type="email" name="correo" placeholder="mpestevez@gmail.com" class="input-100"><br><br>
+    <input type="text" name="user" placeholder="mponce" class="input-48" required>
+    <input type="password" name="pass" placeholder="******" required><br><br>
+    <input type="text" name="tel" placeholder="5526148950" class="input-100"><br><br>
+    <label>Seleccionar rol principal:</label>
+  <select class="form-control" id="sel1">
+    <option>Profesor</option>
+    <option>Co-Editor</option>
+    <option>Co-Viewer</option>
+  </select><br>
+    <label>Añadir rol cotitular:</label>
+    <a href="./registrar_cotitular.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>AÑADIR</a><br><br>
+    <a href="./login.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>GUARDAR</a><br><br>
+    <p class="form__link"><a href="#">AYUDA</a></p>
+    
+
+
+
+
+  </div>
+    
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Copyright 2017 Ricardo Armando Machorro Reyes.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+language governing permissions and limitations under the License.*//* 
+    Created on : 27/08/2017, 08:56:15 PM
+    Author     : Ricardo Armando Machorro Reyes.
+*/
+html {font-family: sans-serif; text-align: center}
+body {display: inline-block; text-align: left}
+label, legend {font-weight: bold}
+*:required, .obligatorio {border: thin solid blue}
+input[type=number], .numero {text-align: right}
+dfn {font-weight: bold}
+/* output después de br o de fieldset, footer y em dentro de form llevan texto
+ * pequeño. */
+br + output, fieldset + output, footer, form em {font-size: small}
+fieldset label, label * {font-weight: normal}
+.error {color: red}
